@@ -1,0 +1,101 @@
+<header class="py-4 flex flex-col gap-3 bg-white/5 p-5">
+  <div class="flex items-center justify-end">
+    <span
+      class="bg-gray-200 border w-fit self-end border-gray-500 float-end text-gray-800 text-sm font-medium me-2 px-3 py-1 rounded"
+      >Diseñador Grafico</span
+    >
+
+    <span
+      class="bg-gray-200 border w-fit self-end border-gray-500 float-end text-gray-800 text-sm font-medium me-2 px-3 py-1 rounded"
+      >Desarrollador Web</span
+    >
+
+    <span
+      class="bg-gray-200 border w-fit self-end border-gray-500 float-end text-gray-800 text-sm font-medium me-2 px-3 py-1 rounded"
+      >Universitario</span
+    >
+  </div>
+
+  <div class="flex items-start">
+    <section class="flex flex-col items-center">
+      <img
+        src="/david-working.jpeg"
+        class="w-[300px] object-cover shadow-xl aspect-square rounded-full"
+        alt=""
+      />
+    </section>
+
+    <main
+      class="p-6 flex flex-col mt-4 gap-4 items-center max-h-[100px] w-full"
+    >
+      <h1 class="text-5xl flex font-bold text-pretty">
+        <span class="text-5xl" id="hand">👋</span>
+        David Cardozo.
+      </h1>
+      <p class="text-pretty text-lg text-center">
+        <strong>¡Hola!</strong> Mi nombre es <code><strong>David</strong></code>
+        soy
+        <span id="typed-1" class="underline"></span>
+      </p>
+      <div class="flex gap-3 mt-5">
+        <span
+          class="bg-green-200 border w-fit self-center border-green-500 float-end text-green-800 text-sm font-medium me-2 px-3 py-1 rounded"
+          >Disponible</span
+        >
+        <a
+          href=""
+          class="bg-blue-200 hover:scale-105 transition border w-fit self-center border-blue-500 float-end text-blue-800 text-sm font-medium me-2 px-3 py-1 rounded"
+          >Curriculum 📎</a
+        >
+      </div>
+    </main>
+  </div>
+
+  <section class="p-6 mt-4 w-full">
+    <h3 class="text-3xl mb-3 font-bold">Un poco de mi...</h3>
+    <p class="text-pretty text-lg">
+      Apasionado del código, el diseño y la tecnología. Siempre estoy en busca
+      de aprender algo nuevo y me esfuerzo al máximo para ofrecer lo mejor en
+      cada proyecto. No hay nada que me motive más que ver la alegría y
+      satisfacción de mis clientes al entregar un resultado que supera sus
+      expectativas. ¡Hagamos realidad tus ideas juntos!
+    </p>
+  </section>
+</header>
+
+<script>
+  import Typed from "typed.js";
+  const typed1 = new Typed("#typed-1", {
+    strings: [
+      "<strong><span>Diseñador!<i></strong></span>",
+      "<strong><span>Desarrollador!<i></strong></span>",
+      "<strong><span>El socio que necesitas!<i></strong></span>",
+    ],
+
+    typeSpeed: 30,
+    loop: true,
+    smartBackspace: true, // this is a default
+  });
+</script>
+
+<style>
+  #hand {
+    animation: greeting 1s linear 0.2s infinite both;
+    animation-fill-mode: both;
+  }
+
+  @keyframes greeting {
+    0% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(35deg);
+    }
+    75% {
+      transform: rotate(24deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+</style>

@@ -7,7 +7,13 @@
     <meta name="generator" content={Astro.generator} />
     <title>Astro Basics</title>
   </head>
-  <body class="grid h-full place-items-center">
+  <body class="grid h-full justify-center">
+    <div class="fixed -z-10 h-screen w-screen bg-black">
+      <div
+        class="absolute inset-0 bg-blue-600 bg-[size:20px_20px] opacity-60 blur-[100px]"
+      >
+      </div>
+    </div>
     <slot />
   </body>
 </html>
