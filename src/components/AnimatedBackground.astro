@@ -61,14 +61,11 @@
   };
 
   const resize = () => {
-    requestAnimationFrame(resize);
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
     renderer.setSize(w, h);
-    renderer.setSize(w, h);
   };
 
-  resize();
   window.addEventListener("resize", resize);
 
   animate();

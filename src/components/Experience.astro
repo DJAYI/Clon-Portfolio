@@ -1,7 +1,22 @@
 ---
+import PortfolioComponent from "./JSX/PortfolioComponent";
 import TechnologiesCarousel from "./TechnologiesCarousel.astro";
 ---
 
-<main class="px-4">
-  <TechnologiesCarousel />
-</main>
+<div class="flex flex-col gap-4">
+  <hr />
+  <h2 class="px-9 text-5xl font-bold" id="experiencias">Experiencias</h2>
+
+  <main class="py-2 px-4">
+    <h3 class="px-6 text-2xl text-gray-950 font-bold">
+      Mis Tecnologías & Herramientas
+    </h3>
+    <TechnologiesCarousel />
+  </main>
+
+  <div class="pb-6">
+    <h3 class="px-9 text-3xl mb-3 text-gray-950 font-bold">Mis Portfolios</h3>
+    <PortfolioComponent client:load />
+  </div>
+</div>
+<hr />
