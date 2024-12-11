@@ -24,6 +24,7 @@
     "typed.js": "^2.1.0"
   },
   "devDependencies": {
+    "@types/glidejs__glide": "^3.6.5",
     "vite": "^6.0.3"
   }
 }
