@@ -5,68 +5,61 @@ import HtmlLogo from "./logos/HtmlLogo.astro";
 import JavascriptLogo from "./logos/JavascriptLogo.astro";
 import PhotoshopLogo from "./logos/PhotoshopLogo.astro";
 import ReactLogo from "./logos/ReactLogo.astro";
+
+const Techs = [
+  {
+    tech: "Bootstrap",
+    Svg: BootstrapLogo,
+  },
+  {
+    tech: "React",
+    Svg: ReactLogo,
+  },
+  {
+    tech: "Photoshop",
+    Svg: PhotoshopLogo,
+  },
+  {
+    tech: "HTML",
+    Svg: HtmlLogo,
+  },
+  {
+    tech: "CSS",
+    Svg: CssLogo,
+  },
+  {
+    tech: "JavaScript",
+    Svg: JavascriptLogo,
+  },
+];
 ---
 
 <div
   class="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] mx-auto [&_pre]:h-[calc(100%-48px)]"
 >
-  <div class="glide grid overflow-x-hidden">
+  <div class="glide grid">
     <div class="glide__track" data-glide-el="track">
-      <ul class="glide__slides py-8">
-        <li
-          class="flex relative glide__slide w-full justify-evenly items-start"
-        >
-          <div class="size-16">
-            <BootstrapLogo />
-          </div>
-        </li>
-        <li
-          class="flex relative glide__slide w-full justify-evenly items-start"
-        >
-          <div class="size-16">
-            <CssLogo />
-          </div>
-        </li>
-        <li
-          class="flex relative glide__slide w-full justify-evenly items-start"
-        >
-          <div class="size-16">
-            <HtmlLogo />
-          </div>
-        </li>
-        <li
-          class="flex relative glide__slide w-full justify-evenly items-start"
-        >
-          <div class="size-16">
-            <JavascriptLogo />
-          </div>
-        </li>
-        <li
-          class="flex relative glide__slide w-full justify-evenly items-start"
-        >
-          <div class="size-16">
-            <PhotoshopLogo />
-          </div>
-        </li>
-        <li
-          class="flex relative glide__slide w-full justify-evenly items-start"
-        >
-          <div class="size-16">
-            <ReactLogo />
-          </div>
-        </li>
+      <ul class="glide__slides flex py-8">
+        {
+          Techs.map(({ tech, Svg }) => (
+            <li class="glide__slide transition-[scale] duration-500">
+              <div class="size-16 aspect-square">{<Svg />}</div>
+            </li>
+          ))
+        }
       </ul>
     </div>
   </div>
 </div>
 
 <script>
+  // @ts-ignore
   import Glide from "@glidejs/glide";
 
   new Glide(".glide", {
     type: "carousel",
     perView: 5,
-    focusAt: "center",
+    focusAt: 3,
     autoplay: true,
     animationDuration: 3000,
   }).mount();
@@ -75,6 +68,6 @@ import ReactLogo from "./logos/ReactLogo.astro";
 <style>
   .glide__slide--active {
     scale: 115%;
-    transition: 400ms ease-in-out;
+    font-weight: bolder;
   }
 </style>
