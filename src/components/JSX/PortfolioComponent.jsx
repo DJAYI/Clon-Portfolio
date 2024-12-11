@@ -1,11 +1,57 @@
 import { useState } from "react";
+import { WorkCard } from "../../interfaces/IWorkCardImpl";
+import { PortfolioContainer } from "./PortfolioContainer";
+
+const PORTFOLIOS = {
+  DG: "Diseño Gráfico",
+  DS: "Desarrollo de Software",
+};
+
+const Works = [
+  new WorkCard(
+    "Logotipo",
+    'Logotipo de la empresa "Arroz Grill"',
+    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
+    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
+    ["Photoshop", "Adobe XD", "Adobe Ilustrator"],
+    PORTFOLIOS.DG
+  ),
+  new WorkCard(
+    "Logotipo",
+    'Logotipo de la empresa "Arroz Grill"',
+    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
+    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
+    ["Photoshop", "Adobe XD", "Adobe Ilustrator"],
+    PORTFOLIOS.DG
+  ),
+  new WorkCard(
+    "Logotipo",
+    'Logotipo de la empresa "Arroz Grill"',
+    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
+    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
+    ["Photoshop", "Adobe XD", "Adobe Ilustrator"],
+    PORTFOLIOS.DG
+  ),
+  new WorkCard(
+    "Logotipo",
+    'Logotipo de la empresa "Arroz Grill"',
+    "",
+    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
+    ["Photoshop", "Adobe XD", "Adobe Ilustrator"],
+    PORTFOLIOS.DG
+  ),
+
+  new WorkCard(
+    "Desarrollo",
+    'Desarrollo de la empresa "Carbon"',
+    "",
+    "/carbon.png",
+    ["React", "Tailwind", "Astro"],
+    PORTFOLIOS.DS
+  ),
+];
 
 export default function PortfolioComponent() {
-  const PORTFOLIOS = {
-    DG: "Diseño Gráfico",
-    DS: "Desarrollo de Software",
-  };
-
   const [portfolio, setPortfolio] = useState(PORTFOLIOS.DG);
 
   const handlePortfolio = () => {
@@ -36,6 +82,9 @@ export default function PortfolioComponent() {
           />
         </button>
       </div>
+
+      {/* Contenedor de Trabajos */}
+      <PortfolioContainer portfolio={portfolio} works={Works} />
     </>
   );
 }

@@ -1,0 +1,28 @@
+dialog {
+  display: block;
+  inset: 0;
+  z-index: var(--layer-important);
+  max-inline-size: min(90vw, var(--size-content-3));
+  max-block-size: min(80vh, 100%);
+  overflow: hidden;
+  transition: opacity 0.2s;
+  animation: var(--animation-scale-down) forwards;
+  animation-timing-function: var(--ease-squish-3);
+  border-radius: 0.5rem;
+  padding: 0;
+  border: solid 1px #ccc;
+  box-shadow: 0 0 2rem 0 rgba(0, 0, 0, 0.5);
+}
+
+dialog[open] {
+  animation: var(--animation-slide-in-up) forwards;
+}
+
+dialog:not([open]) {
+  pointer-events: none;
+  opacity: 0;
+}
+
+dialog::backdrop {
+  backdrop-filter: blur(0.25rem);
+}
