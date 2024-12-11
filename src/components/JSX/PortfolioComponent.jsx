@@ -18,41 +18,41 @@ const Works = [
   ),
   new WorkCard(
     "Logotipo",
-    'Logotipo de la empresa "Arroz Grill"',
-    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
-    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
+    'Logotipo de la empresa "MGUSTACEL"',
+    "https://mi-portafolio-89bae.web.app/img/tienda%20de%20celulares.13ea07aa.jpg",
+    "https://mi-portafolio-89bae.web.app/img/tienda%20de%20celulares.13ea07aa.jpg",
+    ["Photoshop", "Adobe XD", "Adobe Ilustrator"],
+    PORTFOLIOS.DG
+  ),
+  new WorkCard(
+    "Flyer",
+    'Logotipo de la empresa "Cosmetics Shop"',
+    "https://mi-portafolio-89bae.web.app/img/cosmetic%20shop.aa5b4458.jpg",
+    "https://mi-portafolio-89bae.web.app/img/cosmetic%20shop.aa5b4458.jpg",
     ["Photoshop", "Adobe XD", "Adobe Ilustrator"],
     PORTFOLIOS.DG
   ),
   new WorkCard(
     "Logotipo",
     'Logotipo de la empresa "Arroz Grill"',
-    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
-    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
+    "https://mi-portafolio-89bae.web.app/img/logo%201%20fonfo%20negro.7b8849fd.jpg",
+    "https://mi-portafolio-89bae.web.app/img/logo%201%20fonfo%20negro.7b8849fd.jpg",
+    ["Photoshop", "Adobe XD", "Adobe Ilustrator"],
+    PORTFOLIOS.DG
+  ),
+  new WorkCard(
+    "Flyer",
+    'Flyer de la empresa "Chelita Store"',
+    "https://mi-portafolio-89bae.web.app/img/give%20away.aad1f216.jpg",
+    "https://mi-portafolio-89bae.web.app/img/give%20away.aad1f216.jpg",
     ["Photoshop", "Adobe XD", "Adobe Ilustrator"],
     PORTFOLIOS.DG
   ),
   new WorkCard(
     "Logotipo",
-    'Logotipo de la empresa "Arroz Grill"',
-    "",
-    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
-    ["Photoshop", "Adobe XD", "Adobe Ilustrator"],
-    PORTFOLIOS.DG
-  ),
-  new WorkCard(
-    "Logotipo",
-    'Logotipo de la empresa "Arroz Grill"',
-    "",
-    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
-    ["Photoshop", "Adobe XD", "Adobe Ilustrator"],
-    PORTFOLIOS.DG
-  ),
-  new WorkCard(
-    "Logotipo",
-    'Logotipo de la empresa "Arroz Grill"',
-    "",
-    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
+    'Logotipo de la empresa "SOEMSA S.A.S"',
+    "https://mi-portafolio-89bae.web.app/img/LOGO%20SODEMSA.94808117.jpeg",
+    "https://mi-portafolio-89bae.web.app/img/LOGO%20SODEMSA.94808117.jpeg",
     ["Photoshop", "Adobe XD", "Adobe Ilustrator"],
     PORTFOLIOS.DG
   ),

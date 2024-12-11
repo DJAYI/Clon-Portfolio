@@ -20,14 +20,14 @@ export function PortfolioContainer({ portfolio, works }) {
                 <button
                   className="px-4 py-2 rounded-lg border bg-blue-300/30 transition font-semibold border-blue-600 text-sm hover:bg-blue-400/70"
                   onClick={() => {
-                    document.getElementById("workDialog").showModal();
+                    document.getElementById(`workDialog-${index}`).showModal();
                   }}
                 >
                   Hechar un vistazo
                 </button>
 
                 <dialog
-                  id="workDialog"
+                  id={`workDialog-${index}`}
                   className="sm:max-w-4xl w-full rounded-[30px] overflow-y-scroll py-8 px-5"
                 >
                   <div className="flex flex-col sm:flex-row gap-4">
@@ -66,7 +66,9 @@ export function PortfolioContainer({ portfolio, works }) {
                           href={work.link}
                           className="px-4 py-2 rounded-lg border-2 w-fit bg-blue-500 text-white transition font-semibold border-blue-400/70 text-sm hover:bg-white  duration-75 hover:text-black"
                           onClick={() =>
-                            document.getElementById("workDialog").close()
+                            document
+                              .getElementById(`workDialog-${index}`)
+                              .close()
                           }
                         >
                           Visitar Proyecto
@@ -74,7 +76,9 @@ export function PortfolioContainer({ portfolio, works }) {
                         <button
                           className="px-4 py-2 rounded-lg border-2 w-fit bg-red-500 text-white transition font-semibold border-red-400/70 text-sm hover:bg-white duration-75 hover:text-black"
                           onClick={() =>
-                            document.getElementById("workDialog").close()
+                            document
+                              .getElementById(`workDialog-${index}`)
+                              .close()
                           }
                         >
                           Cerrar
