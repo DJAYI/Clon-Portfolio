@@ -13,12 +13,12 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <AnimatedBackground />
   <main
-    class="2xl:max-w-screen-2xl xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm w-full sm:mx-20 sm:px-10 py-5 flex mobile-sm:flex-col lg:flex-row px-5 gap-6 justify-between relative h-full"
+    class="2xl:max-w-screen-2xl xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm w-full sm:mx-20 sm:px-10 py-5 flex min-[320px]:flex-col lg:flex-row px-5 gap-6 justify-between relative h-full"
   >
     <!-- Aqui va los enlaces en la barra de navegacion lateral -->
     <SidebarNav />
     <div
-      class="py-8 px-4 lg:mt-28 mobile-sm:mt-8 z-10 sm:w-11/12 mobile-sm:w-full rounded-t-3xl shadow-lg h-full bg-white"
+      class="py-8 px-4 lg:mt-28 min-[320px]:mt-8 z-10 sm:w-11/12 min-[320px]:w-full rounded-t-3xl shadow-lg h-full bg-white"
     >
       <!-- Aqui va información basica y presentación -->
       <Header />

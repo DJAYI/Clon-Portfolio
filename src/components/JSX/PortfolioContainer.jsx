@@ -3,7 +3,7 @@ import "./DialogStyle.css";
 export function PortfolioContainer({ portfolio, works }) {
   return (
     <>
-      <div className="flex flex-wrap mobile-sm:justify-center xl:justify-center 2xl:justify-center gap-10 mt-16 px-9">
+      <div className="flex flex-wrap min-[320px]:justify-center xl:justify-center 2xl:justify-center gap-10 mt-16 px-9">
         {works?.map(
           (work, index) =>
             work.type === portfolio && (
