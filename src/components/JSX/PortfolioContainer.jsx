@@ -3,12 +3,12 @@ import "./DialogStyle.css";
 export function PortfolioContainer({ portfolio, works }) {
   return (
     <>
-      <div className="flex flex-wrap gap-10 mt-16 px-9">
+      <div className="flex flex-wrap sm:justify-center xl:justify-center 2xl:justify-center gap-10 mt-16 px-9">
         {works?.map(
           (work, index) =>
             work.type === portfolio && (
               <div
-                className="max-w-56 flex flex-col gap-3 items-center text-center text-pretty"
+                className="max-w-56 flex flex-col gap-3 w-full items-center text-center text-pretty"
                 key={index}
               >
                 <img

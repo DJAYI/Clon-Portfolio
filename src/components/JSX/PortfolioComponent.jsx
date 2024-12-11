@@ -40,6 +40,22 @@ const Works = [
     ["Photoshop", "Adobe XD", "Adobe Ilustrator"],
     PORTFOLIOS.DG
   ),
+  new WorkCard(
+    "Logotipo",
+    'Logotipo de la empresa "Arroz Grill"',
+    "",
+    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
+    ["Photoshop", "Adobe XD", "Adobe Ilustrator"],
+    PORTFOLIOS.DG
+  ),
+  new WorkCard(
+    "Logotipo",
+    'Logotipo de la empresa "Arroz Grill"',
+    "",
+    "https://mi-portafolio-89bae.web.app/img/LOGO%20RESTAURANTE.e6a729f3.png",
+    ["Photoshop", "Adobe XD", "Adobe Ilustrator"],
+    PORTFOLIOS.DG
+  ),
 
   new WorkCard(
     "Desarrollo",
