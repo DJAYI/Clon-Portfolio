@@ -28,12 +28,12 @@ export function PortfolioContainer({ portfolio, works }) {
 
                 <dialog
                   id={`workDialog-${index}`}
-                  className="sm:max-w-4xl w-full rounded-[30px] overflow-y-scroll py-8 px-5"
+                  className="sm:max-w-4xl  w-11/12 rounded-[30px] overflow-y-scroll py-8 px-5"
                 >
-                  <div className="flex flex-col sm:flex-row gap-4">
+                  <div className="flex flex-col mx-auto sm:flex-row gap-4">
                     <div className="w-full">
                       <img
-                        className="max-w-sm mx-auto object-contain aspect-square"
+                        className="sm:max-w-sm w-full mx-auto object-contain aspect-square"
                         src={work.img}
                         alt=""
                       />
