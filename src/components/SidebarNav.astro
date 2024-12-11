@@ -7,21 +7,21 @@ import SocialBtn from "./SocialBtn.astro";
 ---
 
 <div
-  class="flex lg:flex-col sm:flex-row sm:max-w-full lg:max-w-lg max-h-screen sm:justify-center lg:justify-evenly sm:items-start lg:items-center lg:sticky top-0 gap-24 z-0"
+  class="flex lg:flex-col mobile-sm:flex-row mobile-sm:max-w-full lg:max-w-lg max-h-screen mobile-sm:justify-center lg:justify-evenly mobile-sm:items-start lg:items-center lg:sticky top-0 gap-24 z-0"
 >
   <nav
-    class="flex flex-col lg:mt-28 sm:mt-8 sm:-mb-12 gap-14 align-middle lg:justify-between w-full px-12 text-center text-white"
+    class="flex flex-col lg:mt-28 mobile-sm:mt-8 mobile-sm:-mb-12 gap-14 align-middle lg:justify-between w-full px-12 text-center text-white"
   >
-    <li class="list-none flex justify-center sm:my-1 lg:my-7">
+    <li class="list-none flex justify-center mobile-sm:my-1 lg:my-7">
       <a class="flex justify-center group w-fit" href="#inicio">
         <img
-          class="object-cover lg:max-w-1/3 sm:max-w-28 group-hover:scale-125 group-hover:[filter:drop-shadow(0px_0px_25px_#0033ee)] transition"
+          class="object-cover lg:max-w-1/3 mobile-sm:max-w-28 group-hover:scale-125 group-hover:[filter:drop-shadow(0px_0px_25px_#0033ee)] transition"
           src="/logo.png"
           alt=""
         />
       </a>
     </li>
-    <div class="lg:flex lg:flex-col sm:hidden lg:gap-10">
+    <div class="lg:flex lg:flex-col mobile-sm:hidden lg:gap-10">
       <li class="list-none">
         <a
           class="text-lg font-medium px-4 py-2 rounded-none text-[white] no-underline bg-gradient-to-b from-[cyan] to-[cyan] bg-no-repeat bg-[length:0%_0.15em] bg-[0%_100%] transition-[background-size] duration-300 ease-in-out hover:bg-[length:100%_0.15em] focus:bg-[length:100%_0.15em] active:bg-[length:100%_0.15em] hover:text-cyan-400"
@@ -38,7 +38,7 @@ import SocialBtn from "./SocialBtn.astro";
   </nav>
 
   <aside
-    class="lg:flex sm:hidden lg:flex-col mt-10 gap-10 lg:justify-between items-center mx-auto"
+    class="lg:flex mobile-sm:hidden lg:flex-col mt-10 gap-10 lg:justify-between items-center mx-auto"
   >
     <div class="lg:flex gap-4 lg:flex-wrap lg:justify-center">
       <SocialBtn link="">
@@ -56,7 +56,7 @@ import SocialBtn from "./SocialBtn.astro";
     </div>
 
     <footer
-      class="flex lg:text-center sm:hidden lg:block gap-5 lg:flex-col mx-auto font-light text-md text-white justify-between items-center"
+      class="flex lg:text-center mobile-sm:hidden lg:block gap-5 lg:flex-col mx-auto font-light text-md text-white justify-between items-center"
     >
       <p>Dacame98@gmail.com</p>
       <p>Cartagena - Colombia</p>

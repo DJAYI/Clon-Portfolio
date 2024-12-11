@@ -39,7 +39,7 @@ const Techs = [
 >
   <div class="glide grid">
     <div class="glide__track" data-glide-el="track">
-      <ul class="glide__slides flex py-8">
+      <ul class="glide__slides flex mobile-sm:gap-10 py-8">
         {
           Techs.map(({ tech, Svg }) => (
             <li class="glide__slide transition-[scale] duration-500">
@@ -64,10 +64,3 @@ const Techs = [
     animationDuration: 3000,
   }).mount();
 </script>
-
-<style>
-  .glide__slide--active {
-    scale: 115%;
-    font-weight: bolder;
-  }
-</style>
